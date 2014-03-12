@@ -12,6 +12,11 @@ test('behest', function(t) {
       start: '!',
       command: 'command',
       params: ['github', 'is', 'cool']
+    }],
+    [';;command github is cool', {
+      start: ';;',
+      command: 'command',
+      params: ['github', 'is', 'cool']
     }]
   ];
 
