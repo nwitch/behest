@@ -1,0 +1,24 @@
+{
+  "name": "behest",
+  "version": "0.0.1",
+  "description": "Parser for commands to IRC bots",
+  "keywords": [
+    "irc"
+  ],
+  "repository": "nwitch/behest",
+  "license": "MIT",
+  "author": "Kenan Yildirim <kenan@kenany.me> (http://kenany.me/)",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "LICENSE.txt"
+  ],
+  "dependencies": {
+    "lodash.contains": "^2.4.1",
+    "lodash.foreach": "^2.4.1",
+    "lodash.indexof": "^2.4.1"
+  },
+  "devDependencies": {
+    "tape": "~2.4.2"
+  }
+}
