@@ -25,4 +25,4 @@ If a regex was written for this pattern, it would hopefully look like this:
 
 And if you were to make a railroad diagram of this regex, you would have this:
 
-![trainwreck](command.svg)
+![trainwreck](https://rawgithub.com/nwitch/behest/master/command.svg)
