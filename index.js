@@ -28,20 +28,13 @@ function behest(message) {
     }
   });
 
-  var endOfCommand = indexOf(message, ' ');
+  var params = message.substring(start === ';;' ? 2 : 1).split(' ');
 
-  if (endOfCommand < 0) {
-    endOfCommand = message.length;
+  command.command = params[0];
+
+  if (params.length > 1) {
+    command.params = params.slice(1);
   }
-
-  command.command = message.substring(start === ';;' ? 2 : 1, endOfCommand);
-
-  if (endOfCommand === message.length) {
-    return command;
-  }
-
-  var params = message.substring(endOfCommand + 1, message.length).split(' ');
-  command.params = params;
 
   return command;
 }
