@@ -20,7 +20,7 @@ Okay, so IRC bot commands typically:
 If a regex was written for this pattern, it would hopefully look like this:
 
 ```
-/^(([!./])|(;{2}))\w+(\s[^\s]+)*$/
+/^(([!.\/])|(;{2}))\w+(\s[^\s]+)*$/
 ```
 
 And if you were to make a railroad diagram of this regex, you would have this:
