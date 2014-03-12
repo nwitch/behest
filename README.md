@@ -26,3 +26,43 @@ If a regex was written for this pattern, it would hopefully look like this:
 And if you were to make a railroad diagram of this regex, you would have this:
 
 ![trainwreck](https://rawgithub.com/nwitch/behest/master/command.svg)
+
+## Example
+
+``` javascript
+var behest = require('behest');
+
+var message = '/give KenanY 5 bitcoins';
+
+behest.isValid(message);
+// => true
+
+behest(message);
+// => {
+// =>   start: '/',
+// =>   command: 'give',
+// =>   params: ['KenanY', '5', 'bitcoins']
+// => }
+```
+
+## Installation
+
+``` bash
+$ npm install behest
+```
+
+## API
+
+### behest(message)
+
+Parses the _String_ `message`. If `message` is not a valid IRC command (the
+syntax of which has already been described), an empty _Object_ is returned.
+Otherwise, an _Object_ (let's call it `command`) is returned:
+
+  - `command.start` is what began the command (`!`, `/`, `.`, or `;;`)
+  - `command.command` is the command (`topic`, `help`, `timeout`, etc.)
+  - `command.params` is an _Array_ of what followed the command
+
+### behest.isValid(message)
+
+Returns `true` if `message` passes the command regex. Returns `false` otherwise.
