@@ -1,5 +1,7 @@
 # behest
 
+[![Build Status](https://travis-ci.org/nwitch/behest.svg?branch=master)](https://travis-ci.org/nwitch/behest)
+
 Parser for commands to IRC bots.
 
 Let's first examine the different syntaxes used by various IRC bots:
