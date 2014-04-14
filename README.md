@@ -1,6 +1,7 @@
 # behest
 
 [![Build Status](https://travis-ci.org/nwitch/behest.svg?branch=master)](https://travis-ci.org/nwitch/behest)
+[![Dependency Status](https://gemnasium.com/nwitch/behest.svg)](https://gemnasium.com/nwitch/behest)
 
 Parser for commands to IRC bots.
 
