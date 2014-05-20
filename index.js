@@ -1,6 +1,5 @@
 var contains = require('lodash.contains');
 var forEach = require('lodash.foreach');
-var indexOf = require('lodash.indexof');
 
 var starts = ['!', '.', '/', ';;'];
 var reCommand = new RegExp(/^(([!.\/])|(;{2}))\w+(\s[^\s]+)*$/);
