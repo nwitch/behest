@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "lodash.contains": "^2.4.1",
-    "lodash.foreach": "^2.4.1"
+    "lodash.foreach": "^3.0.1"
   },
   "devDependencies": {
     "tape": "^3.5.0"
