@@ -24,6 +24,6 @@
     "lodash.foreach": "^2.4.1"
   },
   "devDependencies": {
-    "tape": "^2.4.2"
+    "tape": "^3.5.0"
   }
 }
