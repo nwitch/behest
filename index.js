@@ -1,4 +1,4 @@
-var contains = require('lodash.contains');
+var includes = require('lodash.includes');
 var forEach = require('lodash.foreach');
 
 var starts = ['!', '.', '/', ';;'];
@@ -21,7 +21,7 @@ function behest(message) {
   var start = message.substring(0, 2);
 
   forEach(starts, function(value) {
-    if (contains(start, value)) {
+    if (includes(start, value)) {
       command.start = value;
       return false;
     }
