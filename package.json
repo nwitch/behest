@@ -20,7 +20,7 @@
     "test": "tape test/index.js"
   },
   "dependencies": {
-    "lodash.foreach": "^4.1.0",
+    "lodash.foreach": "^4.4.1",
     "lodash.includes": "^4.1.0"
   },
   "devDependencies": {
